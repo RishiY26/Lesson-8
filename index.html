@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Lesson 8</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>      
+</head>
+<body>
+    <center>
+        <h1> Checklist</h1>
+        <div>
+            <label for="task">Task:</label>
+            <input type="text" id="task" placeholder="Enter task">
+
+        </div> <br>
+        <button id="addTask" class="btn btn-success" onclick="addItem()">Add Task</button>
+        <button id="deleteTask" class="btn btn-danger">Delete Task</button>
+        <br>
+        <h3>My Checklist</h3><br>
+        <div id="output">
+
+        </div>
+    </center>
+</body>
+</html>
