@@ -17,4 +17,13 @@
     db.ref ("/").child(task).update({
       purpose: "adding message"
     });
+    db.ref("/").on("value", function(snapshot) {
+      document.getElementById("output").innerHTML = "";
+      snapshot.forEach(function(childSnapshot) {
+        const childKey = childSnapshot.key;
+        const item = childKey;
+        row = "<div>" + item + "</div><hr>";
+        document.getElementById("output").innerHTML += row;
+      });
+    })
   }
