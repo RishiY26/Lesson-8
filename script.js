@@ -27,3 +27,8 @@
       });
     })
   }
+  function deleteItem(){
+    const task = document.getElementById("task").value;
+    db.ref("/").child(task).remove()
+    
+  }
